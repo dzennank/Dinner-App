@@ -7,22 +7,22 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using BuberDuinner.Application.Common.Interfaces.Authentication;
+using BuberDuinner.Application.Common.Interfaces.Authentication.Services;
 using Microsoft.IdentityModel.Tokens;
 
 namespace BuberDinner.Infrastructure.Authentication
 {
     public class JwtTokenGenerator : IJwtTokenGenerator
     {
+        private readonly IDateTimeProvider _dateProvider;
+
+        public JwtTokenGenerator(IDateTimeProvider dateProvider)
+        {
+            _dateProvider = dateProvider;
+        }
         public string TokenGenerator(Guid userId, string firstName, string lastName)
         {
-                // Generate a random key
-            //     var key = new byte[32]; // 256 bits = 32 bytes
-            //     using (var rng = RandomNumberGenerator.Create())
-            //     {
-            //         rng.GetBytes(key);
-            //     }
             
-            // var base64Key = Convert.ToBase64String(key);
             var signingCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(
                     Encoding.UTF8.GetBytes("super-secret-key-super-secret-key")),
@@ -39,7 +39,7 @@ namespace BuberDinner.Infrastructure.Authentication
 
         var securityToken = new JwtSecurityToken(
             issuer: "BuberDinner",
-            expires: DateTime.Now.AddDays(1),
+            expires:_dateProvider.UtcNow.AddMinutes(60),
             claims: claims,
             signingCredentials: signingCredentials
         );
