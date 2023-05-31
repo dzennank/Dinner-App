@@ -33,3 +33,9 @@ C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDi
 C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDuinner.Application.pdb
 C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Infrastructure.pdb
 C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Domen.pdb
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

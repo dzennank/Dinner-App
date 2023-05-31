@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uj3FP8e61OUanP1kZX03d+cem4SwxeQ1wx4YQ/WTtCArQytXhUhMt0H8vinnEB+NfQpIotpwFTzrFhiaxOTg/g==",
+  "dgSpecHash": "tfj5X6Z6F8vZEjOeGnBOrahgXpwqs4CILqwGAozf812TbhTM1X1YkA5EQjPc4ecxNTqw39WxTOAYfebGr/6Yqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDuinner.Application\\BuberDuinner.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dzena\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.4.23259.5\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.4.23259.5.nupkg.sha512"
+  ],
   "logs": []
 }
