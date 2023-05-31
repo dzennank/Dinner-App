@@ -17,13 +17,13 @@ public class AuthenticationController : ControllerBase
 
     [HttpPost("login")]
     public IActionResult Login(LoginRequest request){
-
+        
         var authRes = _authService.Login(request.Email, request.Password);
        var response = new AuthResponse(
-            authRes.Id,
-            authRes.FirstName,
-            authRes.LastName,
-            authRes.Email,
+            authRes.user.Id,
+            authRes.user.FirstName,
+            authRes.user.LastName,
+            authRes.user.Email,
             authRes.Token
         );
         return Ok(response);
@@ -32,12 +32,13 @@ public class AuthenticationController : ControllerBase
 
      [HttpPost("register")]
     public IActionResult Register(RegisterRequest request){
+        
         var authRes = _authService.Register(request.FirstName, request.LastName, request.Email, request.Password);
         var response = new AuthResponse(
-            authRes.Id,
-            authRes.FirstName,
-            authRes.LastName,
-            authRes.Email,
+            authRes.user.Id,
+            authRes.user.FirstName,
+            authRes.user.LastName,
+            authRes.user.Email,
             authRes.Token
         );
         return Ok(response);
