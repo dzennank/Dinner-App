@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "BuberDinner.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuberDuinner.Application": "1.0.0"
+        },
+        "runtime": {
+          "BuberDinner.Infrastructure.dll": {}
+        }
+      },
+      "BuberDinner.Domen/1.0.0": {
+        "runtime": {
+          "BuberDinner.Domen.dll": {}
+        }
+      },
+      "BuberDuinner.Application/1.0.0": {
+        "dependencies": {
+          "BuberDinner.Domen": "1.0.0"
+        },
+        "runtime": {
+          "BuberDuinner.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BuberDinner.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuberDinner.Domen/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuberDuinner.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

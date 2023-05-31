@@ -1,0 +1,12 @@
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\bin\Debug\net7.0\BuberDinner.Domen.deps.json
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\bin\Debug\net7.0\BuberDinner.Domen.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\bin\Debug\net7.0\BuberDinner.Domen.pdb
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\obj\Debug\net7.0\BuberDinner.Domen.csproj.AssemblyReference.cache
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\obj\Debug\net7.0\BuberDinner.Domen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\obj\Debug\net7.0\BuberDinner.Domen.AssemblyInfoInputs.cache
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\obj\Debug\net7.0\BuberDinner.Domen.AssemblyInfo.cs
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\obj\Debug\net7.0\BuberDinner.Domen.csproj.CoreCompileInputs.cache
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\obj\Debug\net7.0\BuberDinner.Domen.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\obj\Debug\net7.0\refint\BuberDinner.Domen.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\obj\Debug\net7.0\BuberDinner.Domen.pdb
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Domen\obj\Debug\net7.0\ref\BuberDinner.Domen.dll

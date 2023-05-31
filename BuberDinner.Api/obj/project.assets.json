@@ -1,0 +1,153 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "BuberDinner.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/BuberDinner.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Contracts.dll": {}
+        }
+      },
+      "BuberDinner.Domen/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/BuberDinner.Domen.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Domen.dll": {}
+        }
+      },
+      "BuberDinner.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BuberDuinner.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuberDinner.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Infrastructure.dll": {}
+        }
+      },
+      "BuberDuinner.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BuberDinner.Domen": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuberDuinner.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDuinner.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BuberDinner.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Contracts/BuberDinner.Contracts.csproj",
+      "msbuildProject": "../BuberDinner.Contracts/BuberDinner.Contracts.csproj"
+    },
+    "BuberDinner.Domen/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Domen/BuberDinner.Domen.csproj",
+      "msbuildProject": "../BuberDinner.Domen/BuberDinner.Domen.csproj"
+    },
+    "BuberDinner.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Infrastructure/BuberDinner.Infrastructure.csproj",
+      "msbuildProject": "../BuberDinner.Infrastructure/BuberDinner.Infrastructure.csproj"
+    },
+    "BuberDuinner.Application/1.0.0": {
+      "type": "project",
+      "path": "../BuberDuinner.Application/BuberDuinner.Application.csproj",
+      "msbuildProject": "../BuberDuinner.Application/BuberDuinner.Application.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "BuberDinner.Contracts >= 1.0.0",
+      "BuberDinner.Infrastructure >= 1.0.0",
+      "BuberDuinner.Application >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\dzena\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
+      "projectName": "BuberDinner.Api",
+      "projectPath": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
+      "packagesPath": "C:\\Users\\dzena\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDinner.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\dzena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj": {
+              "projectPath": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj"
+            },
+            "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDinner.Infrastructure\\BuberDinner.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDinner.Infrastructure\\BuberDinner.Infrastructure.csproj"
+            },
+            "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDuinner.Application\\BuberDuinner.Application.csproj": {
+              "projectPath": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDuinner.Application\\BuberDuinner.Application.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

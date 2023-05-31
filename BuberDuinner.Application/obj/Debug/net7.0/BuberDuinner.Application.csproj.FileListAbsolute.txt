@@ -1,0 +1,15 @@
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\bin\Debug\net7.0\BuberDuinner.Application.deps.json
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\bin\Debug\net7.0\BuberDuinner.Application.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\bin\Debug\net7.0\BuberDuinner.Application.pdb
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\BuberDuinner.Application.csproj.AssemblyReference.cache
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\BuberDuinner.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\BuberDuinner.Application.AssemblyInfoInputs.cache
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\BuberDuinner.Application.AssemblyInfo.cs
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\BuberDuinner.Application.csproj.CoreCompileInputs.cache
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\BuberDuinner.Application.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\refint\BuberDuinner.Application.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\BuberDuinner.Application.pdb
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\ref\BuberDuinner.Application.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\bin\Debug\net7.0\BuberDinner.Domen.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\bin\Debug\net7.0\BuberDinner.Domen.pdb
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDuinner.Application\obj\Debug\net7.0\BuberDuinner.Application.csproj.CopyComplete
