@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BuberDinner.Domen.Common.Errors;
 using BuberDinner.Domen.Entities;
 using BuberDuinner.Application.Common.Interfaces.Authentication;
 using BuberDuinner.Application.Common.Interfaces.Persistence;
+using ErrorOr;
 using static BuberDuinner.Application.Authentication.AuthenticationResult;
 
 namespace BuberDuinner.Application.Authentication
@@ -19,11 +21,11 @@ namespace BuberDuinner.Application.Authentication
            _jwtTokenGenerator = jwtTokenGenerator;
             _userRepository = userRepository;
         }
-        public AuthResult Register(string FirstName, string LastName, string Email, string password)
+        public  ErrorOr<AuthResult> Register(string FirstName, string LastName, string Email, string password)
         {
             //Validate user
             if(_userRepository.GetUserByEmail(Email) is not null) {
-                throw new Exception("User already exists");
+                return ErrorsUser.DublicateEmail;
             }
             var user = new User {FirstName = FirstName, LastName = LastName, Email = Email, Password = password};
             _userRepository.Add(user);
@@ -36,14 +38,14 @@ namespace BuberDuinner.Application.Authentication
                 );
         }
 
-        public AuthResult Login(string email, string password)
+        public ErrorOr<AuthResult> Login(string email, string password)
         {
             if(_userRepository.GetUserByEmail(email) is not User user) {
             
-                throw new Exception("User does not exists");
+                return ErrorsUser.InvalidCredentials;
             }
             if(user.Password != password) {
-                 throw new Exception("Incorrect password");
+                 return new[] { ErrorsUser.InvalidCredentials };
             }
             var token = _jwtTokenGenerator.TokenGenerator(user.Id, user.FirstName, user.LastName);
             return new AuthResult(

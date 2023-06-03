@@ -1,12 +1,13 @@
 using BuberDinner.Contracts.Authentication;
 using BuberDuinner.Application.Authentication;
+using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
+using static BuberDuinner.Application.Authentication.AuthenticationResult;
 
 namespace BuberDinner.Api.Controllers;
 
-    [ApiController]
     [Route("auth")]
-public class AuthenticationController : ControllerBase 
+public class AuthenticationController : ApiController
 {
     private readonly IAuthenticationService _authService;
 
@@ -18,29 +19,47 @@ public class AuthenticationController : ControllerBase
     [HttpPost("login")]
     public IActionResult Login(LoginRequest request){
         
-        var authRes = _authService.Login(request.Email, request.Password);
-       var response = new AuthResponse(
-            authRes.user.Id,
-            authRes.user.FirstName,
-            authRes.user.LastName,
-            authRes.user.Email,
-            authRes.Token
+        ErrorOr<AuthResult> authRes = _authService.Login(request.Email, request.Password);
+
+        return authRes.Match(
+            res => Ok(res),
+            errors => Problem(errors)
         );
-        return Ok(response);
+    //    var response = new AuthResponse(
+    //         authRes.user.Id,
+    //         authRes.user.FirstName,
+    //         authRes.user.LastName,
+    //         authRes.user.Email,
+    //         authRes.Token
+    //     );
+    //     return Ok(response);
       
     }   
 
      [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request){
-        
-        var authRes = _authService.Register(request.FirstName, request.LastName, request.Email, request.Password);
-        var response = new AuthResponse(
-            authRes.user.Id,
-            authRes.user.FirstName,
-            authRes.user.LastName,
-            authRes.user.Email,
-            authRes.Token
+    public IActionResult Register(RegisterRequest request)
+    {
+
+        ErrorOr<AuthResult> authRes = _authService.Register(
+            request.FirstName, 
+            request.LastName, 
+            request.Email, 
+            request.Password);
+
+        return authRes.Match(
+            authRes => Ok(authRes),
+            errors => Problem(errors)
         );
-        return Ok(response);
-    } 
+    }
+
+    // private static AuthResponse MapAuthResult(AuthResult authRes)
+    // {
+    //     return new AuthResponse(
+    //         authRes.user.Id,
+    //         authRes.user.FirstName,
+    //         authRes.user.LastName,
+    //         authRes.user.Email,
+    //         authRes.Token
+    //     );
+    // }
 }

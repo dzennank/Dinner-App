@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/4AuZoVE0ia7wKB8oLL3auVG+2Qo3CAw3JUbtzKOlSqmEwQku1YwkE6n53wgS0TgD65pdLcX9QGnqbTSfUqPeA==",
+  "dgSpecHash": "/gga9IIaBQ7RxffJ8cOL1DlcMzMdfT4sAlzHG0TQJ7o83HnVfst79ya08d0X+44A8DCxe6cEnMbJpjD0qnmFEg==",
   "success": true,
   "projectFilePath": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dzena\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\dzena\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\dzena\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\dzena\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\dzena\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\dzena\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

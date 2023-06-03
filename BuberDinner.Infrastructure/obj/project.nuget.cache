@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hCm6bo+pLJtQLdnCkaXG+mKt83lXSleWjkZ9/ODNhn/sC5VkLsxFwEYg57gcEqpRbUYmYiX5S6Ihau1c6H0RnQ==",
+  "dgSpecHash": "71sL+DySo6sJV0ahDMTNTo5bku3F7KkekvzjFnwVcmTIZ1iHCrvR0SU73ZXSk4Xf6TZvKdvWiL8ZIlmeNbOOMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDinner.Infrastructure\\BuberDinner.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dzena\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\dzena\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\dzena\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\dzena\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

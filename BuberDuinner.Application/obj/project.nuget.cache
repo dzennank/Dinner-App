@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FLe4dyYmhJc4NyzvtKQnWs8PIDfA/9B9VQ2jtsN4j6XUNb2vOcHo+HMlpZqPQXn7LZyOe1REpw69nWyZeyN0KQ==",
+  "dgSpecHash": "bK3IDoAEsBKsii3f0uxtyD7cxda+VPtFlObvq3jG0Mn2CujUphPTIKG/4byqnEqJ4dG4yKeZk8A5S7VRExCEgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\dzena\\OneDrive\\Radna površina\\CleanArchitectureDDD\\BuberDinner\\BuberDuinner.Application\\BuberDuinner.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dzena\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\dzena\\.nuget\\packages\\microsoft.extensions.configuration\\1.0.0\\microsoft.extensions.configuration.1.0.0.nupkg.sha512",
     "C:\\Users\\dzena\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\1.0.0\\microsoft.extensions.configuration.abstractions.1.0.0.nupkg.sha512",
     "C:\\Users\\dzena\\.nuget\\packages\\microsoft.extensions.configuration.binder\\1.0.0\\microsoft.extensions.configuration.binder.1.0.0.nupkg.sha512",
