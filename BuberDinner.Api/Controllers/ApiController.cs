@@ -7,7 +7,7 @@ namespace BuberDinner.Api.Controllers
     [ApiController]
     public class ApiController : ControllerBase
     {
-       protected IActionResult Problem (List<Error> errors)
+       protected IActionResult ErrorHandle (List<Error> errors)
        {
         var firstError = errors[0];
 

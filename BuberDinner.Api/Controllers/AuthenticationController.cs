@@ -23,7 +23,7 @@ public class AuthenticationController : ApiController
 
         return authRes.Match(
             res => Ok(res),
-            errors => Problem(errors)
+            errors => ErrorHandle(errors)
         );
     //    var response = new AuthResponse(
     //         authRes.user.Id,
@@ -48,7 +48,7 @@ public class AuthenticationController : ApiController
 
         return authRes.Match(
             authRes => Ok(authRes),
-            errors => Problem(errors)
+            errors => ErrorHandle(errors)
         );
     }
 
