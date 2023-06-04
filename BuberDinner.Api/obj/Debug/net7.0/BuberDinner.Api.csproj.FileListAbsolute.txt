@@ -42,3 +42,17 @@ C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDi
 C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.dll
 C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.Contracts.dll
 C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\ErrorOr.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\System.ServiceModel.Primitives.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\cs\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\de\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\es\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\fr\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\it\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\ja\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\ko\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\pl\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\pt-BR\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\ru\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\tr\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\zh-Hans\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\zh-Hant\System.ServiceModel.Primitives.resources.dll

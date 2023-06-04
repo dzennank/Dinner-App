@@ -1,34 +1,35 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+
 using BuberDinner.Domen.Common.Errors;
 using BuberDinner.Domen.Entities;
-
+using BuberDuinner.Application.Common.Interfaces.Authentication;
 using BuberDuinner.Application.Common.Interfaces.Persistence;
 using ErrorOr;
+using MediatR;
 using static BuberDuinner.Application.Common.Interfaces.Authentication.Common.AuthenticationResult;
 
-namespace BuberDuinner.Application.Common.Interfaces.Authentication.Queries
+namespace BuberDuinner.Application.Authentication.Queries.Login
 {
-    public class AuthenticationQueryService : IAuthenticationQueryService
+
+    
+    public class LoginQueryHandler : IRequestHandler<LoginQuery, ErrorOr<AuthResult>>
     {
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
         private readonly IUserRepository _userRepository;
 
-        public AuthenticationQueryService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
+        public LoginQueryHandler(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
         {
-           _jwtTokenGenerator = jwtTokenGenerator;
+            _jwtTokenGenerator = jwtTokenGenerator;
             _userRepository = userRepository;
         }
 
-        public ErrorOr<AuthResult> Login(string email, string password)
+        public async Task<ErrorOr<AuthResult>> Handle(LoginQuery query, CancellationToken cancellationToken)
         {
-            if(_userRepository.GetUserByEmail(email) is not User user) {
+            if(_userRepository.GetUserByEmail(query.Email) is not User user) {
             
                 return ErrorsUser.InvalidCredentials;
             }
-            if(user.Password != password) {
+            if(user.Password != query.Password) {
                  return new[] { ErrorsUser.InvalidCredentials };
             }
             var token = _jwtTokenGenerator.TokenGenerator(user.Id, user.FirstName, user.LastName);
@@ -37,7 +38,6 @@ namespace BuberDuinner.Application.Common.Interfaces.Authentication.Queries
                 token
                 );
         }
-
-        
+    
     }
 }

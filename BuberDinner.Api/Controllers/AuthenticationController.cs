@@ -1,7 +1,9 @@
 using BuberDinner.Contracts.Authentication;
-using BuberDuinner.Application.Common.Interfaces.Authentication.Commands;
-using BuberDuinner.Application.Common.Interfaces.Authentication.Queries;
+using BuberDuinner.Application.Authentication.Commands.Register;
+using BuberDuinner.Application.Authentication.Queries.Login;
+
 using ErrorOr;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using static BuberDuinner.Application.Common.Interfaces.Authentication.Common.AuthenticationResult;
 
@@ -10,19 +12,20 @@ namespace BuberDinner.Api.Controllers;
     [Route("auth")]
 public class AuthenticationController : ApiController
 {
-    private readonly IAuthenticationCommandService _authService;
-    private readonly IAuthenticationQueryService _queryService;
 
-    public AuthenticationController(IAuthenticationCommandService authService, IAuthenticationQueryService queryService)
+    private readonly IMediator _mediator;
+
+    public AuthenticationController(IMediator mediator)
     {
-        _authService = authService;
-        _queryService = queryService;
+        
+        _mediator = mediator;
     }
 
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request){
-        
-        ErrorOr<AuthResult> authRes = _queryService.Login(request.Email, request.Password);
+    public async Task<IActionResult> Login(LoginRequest request){
+
+        var query = new LoginQuery(request.Email, request.Password);
+        ErrorOr<AuthResult> authRes = await _mediator.Send(query);
 
         return authRes.Match(
             res => Ok(res),
@@ -40,14 +43,10 @@ public class AuthenticationController : ApiController
     }   
 
      [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request)
-    {
-
-        ErrorOr<AuthResult> authRes = _authService.Register(
-            request.FirstName, 
-            request.LastName, 
-            request.Email, 
-            request.Password);
+    public async Task<IActionResult> Register(RegisterRequest request)
+    {   
+        var command = new RegisterCommand(request.FirstName, request.LastName, request.Email, request.Password);
+        ErrorOr<AuthResult> authRes = await _mediator.Send(command);
 
         return authRes.Match(
             authRes => Ok(authRes),
