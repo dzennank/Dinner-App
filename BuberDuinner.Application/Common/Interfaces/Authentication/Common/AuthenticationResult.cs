@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using BuberDinner.Domen.Entities;
 
-namespace BuberDuinner.Application.Authentication
+namespace BuberDuinner.Application.Common.Interfaces.Authentication.Common
 {
     public class AuthenticationResult
     {
