@@ -56,3 +56,5 @@ C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDi
 C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\tr\System.ServiceModel.Primitives.resources.dll
 C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\zh-Hans\System.ServiceModel.Primitives.resources.dll
 C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\zh-Hant\System.ServiceModel.Primitives.resources.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Mapster.dll
+C:\Users\dzena\OneDrive\Radna površina\CleanArchitectureDDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Mapster.Core.dll

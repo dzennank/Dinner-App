@@ -1,6 +1,6 @@
 using BuberDuinner.Application;
 using BuberDinner.Infrastructure;
-
+using BuberDinner.Api.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -8,7 +8,8 @@ builder.Services.AddControllers();
 
 builder.Services
 .AddApplication()
-.AddInfrastructure(builder.Configuration);
+.AddInfrastructure(builder.Configuration)
+.AddMappings();
 }
 
 var app = builder.Build();

@@ -3,6 +3,7 @@ using BuberDuinner.Application.Authentication.Commands.Register;
 using BuberDuinner.Application.Authentication.Queries.Login;
 
 using ErrorOr;
+using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using static BuberDuinner.Application.Common.Interfaces.Authentication.Common.AuthenticationResult;
@@ -14,54 +15,40 @@ public class AuthenticationController : ApiController
 {
 
     private readonly IMediator _mediator;
+    private readonly IMapper _mapper;
 
-    public AuthenticationController(IMediator mediator)
+    public AuthenticationController(IMediator mediator, IMapper mapper)
     {
         
         _mediator = mediator;
+        _mapper = mapper;
     }
 
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest request){
 
-        var query = new LoginQuery(request.Email, request.Password);
+        var query = _mapper.Map<LoginQuery>(request);
         ErrorOr<AuthResult> authRes = await _mediator.Send(query);
 
         return authRes.Match(
-            res => Ok(res),
+            res => Ok(_mapper.Map<AuthResponse>(res)),
             errors => ErrorHandle(errors)
         );
-    //    var response = new AuthResponse(
-    //         authRes.user.Id,
-    //         authRes.user.FirstName,
-    //         authRes.user.LastName,
-    //         authRes.user.Email,
-    //         authRes.Token
-    //     );
-    //     return Ok(response);
+  
       
     }   
 
      [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {   
-        var command = new RegisterCommand(request.FirstName, request.LastName, request.Email, request.Password);
+        var command = _mapper.Map<RegisterCommand>(request);
         ErrorOr<AuthResult> authRes = await _mediator.Send(command);
 
         return authRes.Match(
-            authRes => Ok(authRes),
+            authRes => Ok(_mapper.Map<AuthResponse>(authRes)),
             errors => ErrorHandle(errors)
         );
     }
 
-    // private static AuthResponse MapAuthResult(AuthResult authRes)
-    // {
-    //     return new AuthResponse(
-    //         authRes.user.Id,
-    //         authRes.user.FirstName,
-    //         authRes.user.LastName,
-    //         authRes.user.Email,
-    //         authRes.Token
-    //     );
-    // }
+   
 }
