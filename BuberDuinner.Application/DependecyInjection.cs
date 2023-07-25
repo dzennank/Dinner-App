@@ -17,7 +17,9 @@ namespace BuberDuinner.Application
         public static IServiceCollection AddApplication(this IServiceCollection services) {
             // services.AddMediatR(typeof(DependecyInjection).Assembly);
            services.AddMediatR(cfg=>cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
-           services.AddScoped<IPipelineBehavior<RegisterCommand, ErrorOr<AuthResult>>, ValidateRegisterCommandBehavior>();
+           services.AddScoped(
+            typeof(IPipelineBehavior<,>),
+            typeof(ValidatioBehavior<,>));
            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             return services;
         }
